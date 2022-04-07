@@ -1,0 +1,3 @@
+[submodule "planar_graph_playground"]
+	path = planar_graph_playground
+	url = https://github.com/Hermann-SW/planar_graph_playground
