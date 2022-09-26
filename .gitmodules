@@ -4,3 +4,6 @@
 [submodule "javascript-sphere"]
 	path = javascript-sphere
 	url = https://github.com/Hermann-SW/javascript-sphere
+[submodule "cuboid_shortest_paths"]
+	path = cuboid_shortest_paths
+	url = git@github.com:Hermann-SW/cuboid_shortest_paths.git
