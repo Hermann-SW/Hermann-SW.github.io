@@ -7,3 +7,6 @@
 [submodule "cuboid_shortest_paths"]
 	path = cuboid_shortest_paths
 	url = git@github.com:Hermann-SW/cuboid_shortest_paths.git
+[submodule "RSA_numbers_factored"]
+	path = RSA_numbers_factored
+	url = git@github.com:Hermann-SW/RSA_numbers_factored.git
