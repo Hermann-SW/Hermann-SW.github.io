@@ -1,0 +1,42 @@
+<body>
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+
+<textarea id="_term_" cols=80 rows=24></textarea>
+
+<script src="RSA_numbers_factored/RSA_numbers_factored.js"></script>
+
+<script>
+t0 = Date.now()
+
+_term_ = document.getElementById("_term_");
+_p_ = print_; // = console.log;
+
+RSA=new RSA();
+r=RSA.get(250);
+n=r[1];
+print(digits(n)+" digits")
+print("n="+n);
+for(var t=2n;t<n;++t){
+    if(kronecker(t,n)==-1){
+        a=t;
+        break;
+    }
+}
+
+t=RSA.totient(r)
+
+b0=powmod(a,t,n)==1n
+b1=powmod(a,t>>1n,n)==1n
+b2=powmod(a,t>>2n,n)==1n
+b3=powmod(a,t>>2n,n)!=-1n
+x=powmod(a,t>>2n,n)
+print("a=",a,"\n",b0,"\n",b1,"\n",b2,"\n",b3,"\nx="+x)
+
+print("gcd(x-1,n)",gcd(x-1n,n))
+print("gcd(x+1,n)",gcd(x+1n,n))
+print("gcd(x-1,n)*gcd(x+1,n)==n")
+print(gcd(x-1n,n)*gcd(x+1n,n)==n)
+
+print("duration:",(Date.now()-t0)+"ms")
+</script>
+</body>
