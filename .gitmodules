@@ -10,3 +10,6 @@
 [submodule "RSA_numbers_factored"]
 	path = RSA_numbers_factored
 	url = git@github.com:Hermann-SW/RSA_numbers_factored.git
+[submodule "lattice_sphere_cmp"]
+	path = lattice_sphere_cmp
+	url = https://github.com/Hermann-SW/lattice_sphere_cmp
