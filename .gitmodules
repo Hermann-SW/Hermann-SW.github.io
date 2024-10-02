@@ -13,3 +13,6 @@
 [submodule "lattice_sphere_cmp"]
 	path = lattice_sphere_cmp
 	url = https://github.com/Hermann-SW/lattice_sphere_cmp
+[submodule "graph"]
+	path = graph
+	url = https://github.com/Hermann-SW/graph
